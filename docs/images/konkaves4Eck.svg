@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>
+<svg
+	xmlns='http://www.w3.org/2000/svg'
+	width='640'
+	height='560'
+	viewBox='-.5 -.5 8 7'
+>
+	<!-- Punkte: A (7,0); B (6,6); C (0,4); D (5,3) -->
+	<g transform='translate(0 6)'>
+		<!-- Zeichnung -->
+		<g transform='scale(1,-1)'>
+			<g fill='#88F' opacity='.65'>
+				<path d='M7,0 L6,6 L0,4 L5,3 Z' /><!-- ABCD -->
+			</g>
+			<g fill='#E4E4FF'>
+				<path d='M7,0 L6.445,0.832 A1,1 1 0 0 6.836,0.986' /><!-- ∠A -->
+				<path d='M6,6 L5.051,5.684 A1,1 1 0 1 6.164,5.014' /><!-- ∠B -->
+				<path d='M0,4 L0.981,3.804 A1,1 1 0 1 0.949,4.316' /><!-- ∠C -->
+				<path d='M5,3 L5.555,2.168 A1,1 1 1 1 4.019,3.196' /><!-- ∠D -->
+			</g>
+			<g fill='none' stroke='#44A' stroke-linejoin='round' stroke-width='.04'>
+				<path d='M7,0 L6,6 L0,4 L5,3 Z' /><!-- ABCD -->
+				<path d='M6,6 L5,3' stroke-dasharray='.04 .04' /><!-- BD -->
+			</g>
+		</g>
+		<!-- Beschriftung -->
+		<g fill='black' font-family='Helvetica,Arial,sans-serif' font-size='.25pt'>
+			<text x='7.1' y='0.3'>A</text>
+			<text x='6.1' y='-6.1'>B</text>
+			<text x='-0.4' y='-4'>C</text>
+			<text x='4.7' y='-2.6'>D</text>
+		</g>
+	</g>
+</svg>

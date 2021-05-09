@@ -1,0 +1,26 @@
+bookdown::gitbook:
+  toc_depth: 3
+  default: true
+  includes:
+    in_header: webex.js
+  css: [webex.css, style.css, toc.css]
+  config:
+    toc:
+      collapse: section
+      scroll_highlighting: yes
+      before: |
+        <li><center><a href="https://gdischinger.github.io/daw-8"><img src="images/spurensuche.jpeg" alt="logo" width="60%" height="60%"style="margin: 15px 0 0 0"></a></center></li>
+    edit: null
+    download: null
+    info: yes
+    sharing:
+      github: no
+      facebook: no
+      linkedin: no
+      twitter: no
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib    
+bookdown::epub_book: default

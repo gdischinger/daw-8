@@ -1,0 +1,148 @@
+---
+title: "Eingangsquiz-Versuch"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<form id="test">
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td>$U=2\pi r$ - Was wird mit dieser Formel berechnet?</td>
+<td>
+<input id="q1" maxlength="30" name="q1" size="30" type="text" /></td>
+</tr>
+<tr>
+<td>Der Durchmesser ist 5 mal der Radius.</td>
+<td>
+<input name="q2" type="radio" value="true" />
+        wahr <br>
+<input name="q2" type="radio" value="false" />
+        falsch</td>
+</tr>
+<tr>
+<td>Wie berechnet man die Fläche des Dreiecks?</td>
+<td>
+<input name="q3" type="radio" value="d1" />
+      <input type="image" src="../images/logo.png" height="50px"> <br>
+<input name="q3" type="radio" value="d2" />
+      $42$ <br>
+<input name="q3" type="radio" value="d3" />
+      $\sqrt{g}$ <br>
+<input name="q3" type="radio" value="d4" />
+      $A = {1 \over 2} gh$ <br>
+<input name="q3" type="radio" value="keine" />
+      Keine der oben genannten Lösungen ist richtig</td>
+</tr>
+<tr>
+<td width="30%">Multipliziere aus. $(a+b)^2$ [Es können mehrer Antworten richtig sein.]</td>
+<td>
+<input id="q4" name="q4" type="checkbox" value="1" />
+        $a^2+2ab+b^2$ <br>
+<input id="q4" name="q4" type="checkbox" value="2" />
+        $3 \over 6$ <br>
+<input id="q4" name="q4" type="checkbox" value="3" />
+        $89$ <br>
+<input id="q4" name="q4" type="checkbox" value="4" />
+        $A=\pi \cdot r^2$</td>
+</tr>
+<tr>
+<td>Hans ist vier Mal so alt wie seine Schwester</td>
+<td>
+<select id="q5" name="q5">
+        <option value="t1"> </option>
+        <option value="t2">Hans kann alles</option>
+        <option value="t3">$7$</option>
+        <option value="t4">$4h=s$</option>
+        <option value="t5">Abrakadabra</option>
+      </select></td>
+</tr>
+</table>
+<input onclick="gradeTest()" name="submit" type="button" value="Stimmts?"/>
+<br>
+<br>
+Du hast <span id="ergebnis"> noch keine </span> von <span id="anzahlFragen"> all den </span> Aufgaben richtig gelöst!
+</form>
+
+ 
+```{js, echo=FALSE}
+
+function gradeTest() {
+   //variables with global implications
+   var totalQuestions = 5;
+   var correctAnswers = 0;
+   var alertText;
+   var i;
+   
+   var a1 = document.getElementById('q1').value.toLowerCase();
+   if(a1 == 'Kreisumfang') {
+      correctAnswers++;
+   }
+
+   var a2 = document.getElementsByName('q2');
+   for(i = 0; i < a2.length; i++) {
+      if(a2[i].checked) {
+         if(a2[i].value == 'true') {
+            correctAnswers++;
+            break;
+         }
+      }
+   }
+   
+   var a3 = document.getElementsByName('q3');
+   for(i = 0; i < a3.length; i++) {
+      if(a3[i].checked) {
+         if(a3[i].value == 'augusta') {
+            correctAnswers++;
+            break;
+         }
+      }
+   }
+   
+   var a4 = document.getElementsByName('q4');
+   var a4answers = new Array();
+   var a4right = new Array('pig','cow');
+   var a4bool = true;
+ 
+   for(i = 0; i < a4.length; i++) {
+      if(a4[i].checked) {
+         a4answers.push(a4[i].value);
+      }
+   }
+   a4answers.sort();
+   a4right.sort();
+   if(a4answers.length == a4right.length) {
+      for(i = 0; i < a4answers.length; i++) {
+         if(a4answers[i] != a4right[i]) {
+            a4bool = false;
+            break;
+         }
+      }
+   }
+   else {
+      a4bool = false;
+   }
+   if(a4bool == true) {
+      correctAnswers++;
+   }
+   
+  var q5 = document.getElementById('q5');
+   if(q5.selectedIndex == 3) {
+      correctAnswers++;
+   }
+   if(correctAnswers == totalQuestions) {
+      alertText = "Alles richtig! Bestens!";
+   }
+   else {
+      alertText = "Du hast " + correctAnswers + " von " + totalQuestions + " Antworten richtig!";
+   }
+   document.getElementById('ergebnis').innerHTML = correctAnswers;
+   document.getElementById('anzahlFragen').innerHTML = totalQuestions;
+   <!-- alert(alertText); -->
+}
+
+
+
+
+```

@@ -1,0 +1,256 @@
+# Definieren
+
+Unter einer Definition versteht man im Allgemeinen die **genaue Abgrenzung eines Begriffes** innerhalb eines größeren Zusammenhangs. Dabei darf und muss man natürlich andere Begriffe verwenden.
+
+Ein Begriff wird dabei durch eine **Beschreibung** oder **Erklärung** dessen, was er bezeichnet, genau bestimmt. Ist das geschehen, kann man andersherum für jedes Objekt angeben, ob es unter den Begriff fällt oder nicht. Die unter der Definition zusammengefassten Objekte sind dann bezüglich der in der Definition genannten Merkmale gleichartig.
+
+#### Beispiel 1 {-}
+
+Gib eine Definition für das Viereck an.
+
+`r hide("Vorschlag")`
+
+Ein Viereck ist eine geometrische Figur in der Ebene, die vier Ecken hat.
+
+#### {-}
+
+Betrachte folgenden Zoo der Vierecke:
+
+<img src="./images/viereckZoo.png" height="300" />
+
+Überlege dir Antworten auf folgende Fragen:
+
++ Fallen alle diese Vierecke unter die oben vorgeschlagene Definition? 
+
++ Möchtest du eines oder mehrere ausschließen? 
+
++ Falls ja, musst du dafür die Definition ändern? Wie sollte sie deiner Ansicht nach lauten?
+
+
+#### Beispiel 2 {-}
+
+Wie du feststellst und sicher schon oft festgestellt hast, gibt es Vierecke in zahlreichen Variationen. Oft möchte man sogenannte konkave Vierecke ausschließen. Das ist ein konkaves Viereck:
+
+<img src="./images/konkaves4Eck.svg" height="300" />
+
+Ändere die Definition so ab, dass konkave Vierecke ausgeschlossen sind.
+
+`r hide("Tipp")`
+
+Überlege dir, wodurch sich konkave Vierecke auszeichnen.
+
+#### {-}
+
+`r hide("Vorschlag")`
+
+Konkave Vierecke zeichnen sich dadurch aus, dass der Schnittpunkt der Diagonalen bei ihnen außerhalb des Vierecks liegt. Hier ein Beispiel:
+
+<img src="./images/konkavesViereckDiagonalen.png" height="300" />
+
+Man könnte also einschränken:
+
+Unter einem Viereck verstehe ich eine geometrische Figur in der Ebene, die genau vier Ecken hat und für die gilt, dass sich ihre Diagonalen im Inneren der Figur schneiden.
+
+#### {-}
+
+Jetzt können wir uns daran machen, Ordnung in den Zoo der Vierecke zu bringen. Wir klassifizieren sie. Dabei helfen natürlich weitere Definitionen.
+
+
+#### Beispiel 3 {-}
+
+Definiere Rechteck.
+
+`r hide("Vorschlag 1")`
+
+Ein Viereck, das vier rechte Winkel hat, heißt Rechteck.
+
+<img src="./images/rechteck90Winkel.png" height="100" />
+
+#### {-}
+
+`r hide("Vorschlag 2")`
+
+Ein Viereck, dessen Mittelsenkrechten Symmetrieachsen sind, heißt Rechteck.
+
+<img src="./images/rechteckMittelsenkrecht.png" height="150" />
+
+#### {-}
+
+Überprüfe diese Definitionen, indem du überlegst, ob alle Rechtecke darunter fallen und andere Vierecke ausgeschlossen werden.
+
+Und jetzt bist du an der Reihe!
+
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 1 {-}
+
+Gib für folgende besondere Vierecke eine Definition an.
+
+a) Parallelogramm
+
+b) Quadrat
+
+c) Trapez
+
+d) Raute
+
+`r hide("Tipp")`
+
+Dies sind mögliche Eigenschaften, an die du bei deiner Definition denken könntest:
+
++ parallele Gegenseiten
+
++ gleich lange Gegenseiten
+
++ gleich lange Diagonalen
+
++ gleichseitig
+
++ gleichwinklig
+
++ rechtwinklig
+
++ punktsymmetrisch
+
++ achsensymmetrisch
+
+#### {-}
+
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 2 {-}
+
+Gib für folgende besondere Dreiecke eine Definition an.
+
+a) Rechtwinklige Dreiecke.
+
+b) Gleichschenklige Dreiecke.
+
+c) Gleichseitige Dreiecke.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 3 {-}
+
+Definiere:
+
+a) Mittelsenktrechte
+
+b) Winkelhalbierende
+
+c) Höhe im Dreieck
+
+d) Lotgerade
+
+e) Seitenhalbierende
+
+f) Kreis
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 4 {-}
+
+Welche besonderen Zahlen sind hier definiert?
+
+a) Die Zahlen lassen sich in der Form $2 \cdot n + 1$ mit $n= 0, 1, 2, 3, \ldots$ schreiben.
+
+b) Die Zahlen haben die Form $5 \cdot n$, wobei $n$ eine natürliche Zahl ist.
+
+c) Die Zahlen haben die Form $n^2$ mit $n= 1, 2, 3, 4, \ldots$
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 5 {-}
+
+Definiere folgende Begriffe und überprüfe deine Definition, indem du im Internet, im Lexikon oder in deinen Unterlagen nachliest:
+
+a) Arithmetisches Mittel
+
+b) Relative Häufigkeit
+
+c) Absolute Häufigkeit
+
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 6 {-}
+
+Erinnere dich an den Anfang des Schuljahres und definiere folgende Begriffe:
+
+a) Steigung einer Geraden
+
+b) y-Achsenabschnitt eines Funktionsgraphen
+
+c) Lineare Funktion
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 7 {-}
+
+**Schwer! - Keine Angst vor komischen Wörtern! - Mehrmals lesen hilft!**
+
+Zwei ganze Zahlen $a$ und $b$ heißen kongruent modulo $m$, wenn die Division von $a$ und $b$ durch $m$ den gleichen Rest $r$ lässt.
+
+`r hide("Tipp")`
+
+Versuch dir die Definition an Beispielen greifbar zu machen. Nimm drei ganze Zahlen: Eine Zahl für a, eine für b und eine für m. Und? Was für ein Rest bleibt, wenn du a durch m dividierst (wie in der Grundschule)? Welcher Rest bleibt, wenn du b durch m dividierst? Bleibt der gleiche Rest? Wenn ja, heißen a und b kongruent modulo m.  
+
+#### {-}
+
+a) Sind $3$ und $5$ kongruent modulo $2$? Warum?
+
+b) Sind $3$ und $4$ kongruent modulo $2$? Warum?
+
+c) Sind $5$ und $8$ kongruent modulo $3$? Warum?
+
+d) Nenne vier Zahlen, die modulo $5$ kongruent sind.
+
+e) In Aufgabe 4 wurden besondere Zahlen definiert. In welcher Form lassen sich alle Zahlen schreiben, die modulo $3$ kongruent zu $2$ sind?
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
