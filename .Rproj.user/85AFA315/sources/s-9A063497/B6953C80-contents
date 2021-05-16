@@ -279,22 +279,21 @@ Hat man eine Liste (oder Sammlung) von Daten in Form von Zahlen oder Größen ge
 
 #### {-}
 
-b) Absolute Häufigkeit
-
-`r hide("Lösungsvorschlag")`
-
-Die absolute Häufigkeit gibt an, wie oft ein bestimmter Wert in einer Datensammlung vorkommt.
-
-#### {-}
-
-
-c) Relative Häufigkeit
+b) Relative Häufigkeit
 
 `r hide("Lösungsvorschlag")`
 
 Die relativen Häufigkeit gibt den Anteil der Elemente einer Datensammlung wider, die alle einen bestimmten (gleichen) Wert haben. Dabei gilt:
 
 $$relative\;Häufigkeit = \frac{absolute\;Häufigkeit}{Gesamtzahl}$$
+
+#### {-}
+
+c) Absolute Häufigkeit
+
+`r hide("Lösungsvorschlag")`
+
+Die absolute Häufigkeit gibt an, wie oft ein bestimmter Wert in einer Datensammlung vorkommt.
 
 #### {-}
 

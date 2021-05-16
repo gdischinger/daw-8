@@ -215,11 +215,9 @@ Eine Gerade, die senkrecht ist zu einer anderen Geraden, nennt man Lotgerade zu 
 
 #### {-}
 
-e) Seitenhalbierende des Dreiecks
+e) Seitenhalbierende
 
-`r hide("Lösungsvorschlag")`
-
-Die Gerade, die eine Ecke des Dreiecks mit dem Mittelpunkt der gegenüberliegenden Seite verbindet, heißt Seitenhalbierende des Dreiecks.
+`r hide("Lösung")`
 
 #### {-}
 
@@ -227,7 +225,7 @@ f) Kreis
 
 `r hide("Lösungsvorschlag")`
 
-Ein Kreis ist eine geometrische Figur in der Ebene, die aus all den Punkten besteht, die von einem gegebenen Punkt (dem Mittelpunkt des Kreises) in dieser Ebene den gleichen Abstand haben.
+
 
 #### {-}
 
@@ -243,23 +241,17 @@ a) Die Zahlen lassen sich in der Form $2 \cdot n + 1$ mit $n= 0, 1, 2, 3, \ldots
 
 `r hide("Lösung")`
 
-Die ungeraden natürlichen Zahlen.
-
 #### {-}
 
 b) Die Zahlen haben die Form $5 \cdot n$, wobei $n$ eine natürliche Zahl ist.
 
 `r hide("Lösung")`
 
-Die Vielfachen der Zahl 5.
-
 #### {-}
 
 c) Die Zahlen haben die Form $n^2$ mit $n= 1, 2, 3, 4, \ldots$
 
 `r hide("Lösung")`
-
-Die Quadratzahlen
 
 #### {-}
 
@@ -273,28 +265,19 @@ Definiere folgende Begriffe und überprüfe deine Definition, indem du im Intern
 
 a) Arithmetisches Mittel
 
-`r hide("Lösungsvorschlag")`
-
-Hat man eine Liste (oder Sammlung) von Daten in Form von Zahlen oder Größen gegeben, so ist das arithmetische Mittel (der Mittelwert) dieser Daten der Quotient aus der Summe aller Zahlen oder Größen durch die Anzahl der gegebenen Werte.
+`r hide("Lösung")`
 
 #### {-}
 
-b) Absolute Häufigkeit
+b) Relative Häufigkeit
 
-`r hide("Lösungsvorschlag")`
-
-Die absolute Häufigkeit gibt an, wie oft ein bestimmter Wert in einer Datensammlung vorkommt.
+`r hide("Lösung")`
 
 #### {-}
 
+c) Absolute Häufigkeit
 
-c) Relative Häufigkeit
-
-`r hide("Lösungsvorschlag")`
-
-Die relativen Häufigkeit gibt den Anteil der Elemente einer Datensammlung wider, die alle einen bestimmten (gleichen) Wert haben. Dabei gilt:
-
-$$relative\;Häufigkeit = \frac{absolute\;Häufigkeit}{Gesamtzahl}$$
+`r hide("Lösung")`
 
 #### {-}
 
@@ -308,25 +291,19 @@ Erinnere dich an den Anfang des Schuljahres und definiere folgende Begriffe:
 
 a) Steigung einer Geraden
 
-`r hide("Lösungsvorschlag")`
-
-Die Steigung m einer Geraden gibt an, wie steil die Gerade ist: Also um wie viel der y-Wert steigt (fällt), wenn der x-Wert um 1 zunimmt.
+`r hide("Lösung")`
 
 #### {-}
 
 b) y-Achsenabschnitt eines Funktionsgraphen
 
-`r hide("Lösungsvorschlag")`
-
-Als y-Achsenabschnitt ($S(0|n)$) bezeichnet man den Schnittpunkt eines Graphen mit der y-Achse.
+`r hide("Lösung")`
 
 #### {-}
 
 c) Lineare Funktion
 
-`r hide("Lösungsvorschlag")`
-
-Eine lineare Funktion ist eine Zuordnung $x \rightarrow y$, bei denen man zur Berechnung des y-Wertes eine Gleichung der Form $y=m\cdot x +n$ aufstellen kann.
+`r hide("Lösung")`
 
 #### {-}
 
@@ -350,19 +327,11 @@ a) Sind $3$ und $5$ kongruent modulo $2$? Warum?
 
 `r hide("Lösung")`
 
-Ja, denn $3$ und $5$ lassen bei Division durch $2$ denselben Rest:
-
-$3:2 = 1 \quad Rest \; 1 \quad$ und $\quad 5:2 = 2\quad Rest\;1$
-
 #### {-}
 
 b) Sind $3$ und $4$ kongruent modulo $2$? Warum?
 
 `r hide("Lösung")`
-
-Nein, denn $3$ und $4$ lassen bei Division durch $2$ nicht denselben Rest:
-
-$3:2 = 1 \quad Rest \;1 \quad$ und $\quad 4:2=2 \quad Rest \; 0$
 
 #### {-}
 
@@ -370,43 +339,17 @@ c) Sind $5$ und $8$ kongruent modulo $3$? Warum?
 
 `r hide("Lösung")`
 
-Ja, denn $5$ und $8$ lassen bei Division durch $3$ denselben Rest:
-
-$5:3 = 1 \quad Rest \; 2 \quad$ und $\quad 8:3 = 2\quad Rest\;2$ 
-
 #### {-}
 
 d) Nenne vier Zahlen, die modulo $5$ kongruent sind.
 
 `r hide("Lösung")`
 
-Zum Beispiel die Zahlen $1$, $6$, $11$ und $16$. Dividiert man diese Zahlen durch $5$, so bleibt immer dergleiche Rest: nämlich $1$. Denn:
-
-$1 = 0 \cdot 5 + 1$
-
-$6 = 1 \cdot 5 + 1$
-
-$11 = 2 \cdot 5 + 1$
-
-$16 = 3 \cdot 5 + 1$
-
 #### {-}
 
 e) In Aufgabe 4 wurden besondere Zahlen definiert. In welcher Form lassen sich alle Zahlen schreiben, die modulo $3$ kongruent zu $2$ sind?
 
 `r hide("Lösung")`
-
-Die Forderung, dass die Zahlen modulo $3$ kongruent zu $2$ seien sollen, heißt nichts anderes, als dass bei Division durch $3$ der Rest $2$ bleiben soll. Das ist beispielsweise bei den Zahlen $2$, $5$, $8$ oder $11$ der Fall. Denn:
-
-$2 = 0 \cdot 3 + 2$
-
-$5 = 1 \cdot 3 + 2$
-
-$8 = 2 \cdot 3 + 2$
-
-$11 = 3 \cdot 3 + 2$
-
-Alle diese Zahlen lassen sich also in der Form $n \cdot 3 + 2$ schreiben.
 
 #### {-}
 

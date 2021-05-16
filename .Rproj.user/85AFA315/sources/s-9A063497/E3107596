@@ -1,26 +1,27 @@
 {
-    "id": "1A6576B3",
-    "path": "~/github/Lernpfade/daw-8/index.Rmd",
-    "project_path": "index.Rmd",
+    "id": "E3107596",
+    "path": "~/github/Lernpfade/daw-8/definieren.Rmd",
+    "project_path": "definieren.Rmd",
     "type": "r_markdown",
-    "hash": "3022179232",
+    "hash": "1872058843",
     "contents": "",
     "dirty": false,
-    "created": 1620593965940.0,
+    "created": 1621173780518.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
+        "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "61,54",
-        "scrollLine": "57"
+        "cursorPosition": "299,0",
+        "scrollLine": "297"
     },
     "folds": "",
-    "lastKnownWriteTime": 1620594002,
+    "lastKnownWriteTime": 1621173826,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1620594002250,
+    "last_content_update": 1621173826608,
     "read_only": false,
     "read_only_alternatives": []
 }
