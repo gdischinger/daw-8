@@ -2,8 +2,430 @@
 
 ## Arithmetik und Algebra
 
+#### Aufgabe 1 {-}
+Entscheide, ob die folgenden Aussagen wahr oder falsch sind. Begründe deine Entscheidung! Bei falschen Aussagen genügt ein Gegenbeispiel.
+
+a) Jede natürliche Zahl lässt sich als Bruch schreiben.
+
+b) Subtrahiert man zwei natürliche Zahlen voneinander, erhält man eine natürliche Zahl.
+
+c) Multipliziert man zwei irrationale Zahlen, erhält man immer eine irrationale Zahl.
+
+d) Da Wurzeln immer positiv sind, gibt es keine negativen irrationalen Zahlen.
+
+e) Es gibt irrationale Zahlen, deren 1000-Faches eine rationale Zahl ist.
+
+f) Eine Dezimalzahl, die unendlich viele Nachkommastellen hat, ist immer irrational.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 2 {-}
+Frau D. behauptet:
+
+>Die Summe von fünf aufeinander folgenden Zahlen ist durch 5 teilbar.
+
+Finde ein Gegenbeispiel oder beweise, dass Frau D. recht hat.
+
+`r hide("Tipp 1")`
+
+Führe Variablen und Terme ein! 
+
+#### {-}
+
+`r hide("Tipp 2")`
+
+Den Nachfolger einer natürlichen Zahl $n$ kann man als $n+1$ schreiben. Die Summe aus einer Zahl und ihrem Nachfolger wäre also $n+n+1=2n+1$. Wie kannst du auf die gleiche Art die Summe von fünf aufeinander folgenden Zahlen ausdrücken?
+
+#### {-}
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 3 {-}
+Frau D. hat Langeweile. Daher wirft sie nun mit Behauptungen nur so um sich.
+ 
+a) Die Summe zweier ungerader natürlicher Zahlen ist eine gerade Zahl.
+
+b) Quadriert man eine ungerade Zahl, so ist das Ergebnis ungerade.
+
+c) Die Summe von vier aufeinander folgenden natürlichen Zahlen ist niemals durch vier, aber immer durch zwei teilbar.
+
+Finde jeweils ein Gegenbeispiel oder beweise, dass Frau D. recht hat.
+
+`r hide("Tipp")`
+
+Führe Variablen und Terme ein! Betrachte Beispiele!
+
+#### {-}
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+
+
+#### Aufgabe 4 - Der Würfeltrick {-}
+<img src="./images/glaskugelWuerfel.jpeg" height="150" />
+
+Eine Person wirft drei Würfel nacheinander verdeckt und merkt sich die geworfenen Zahlen in der Reihenfolge ihres Auftretens. Die zweite Person, der Hellseher, will die Zahlen erfahren. Dazu stellt er der ersten Person folgende Aufgabe:
+
+> Multipliziere die Zahl des ersten Würfels mit 2, addiere dann 5 und multipliziere das Ergebnis mit 5. Addiere die Zahl des zweiten Würfels dazu und multipliziere die Summe mit 10. Addiere schließlich die Zahl des dritten Würfels dazu.
+
+Die erste Person nennt das Ergebnis. Der Hellseher subtrahiert davon 250 und liest dann die Würfelzahlen als Hunderter-, Zehner- und Einerziffern ab.
+
+Begründe dieses Vorgehen. Stelle dazu einen Rechenterm für die drei Zahlen auf.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 5 {-}
+
+**Vorsicht - ausgesprochen gefährliche Aufgabe**
+
+Konstruiere eine Zahlenfolge. Gehe dabei so vor:
+
++ Beginne mit irgendeiner natürlichen Zahl $n>0$.
+
++ Wenn $n$ gerade ist, dann nimm als nächste Zahl $\frac{n}{2}$
+
++ Wenn $n$ ungerade ist, dann nimm als nächste Zahl $3\cdot n + 1$
+
+Hier ein Beispiel:
+
+Ich wähle als erste Zahl $n=9$. Das ist nicht gerade, also rechne ich $3 \cdot 9 + 1 =28$. Damit habe ich die zweite Zahl. Die ist gerade, also erhalte ich als dritte Zahl $\frac{28}{2} = 14$. $14$ ist wieder gerade, damit bekomme ich als vierte Zahl $\frac{14}{2}=7$ - eine ungerade Zahl. Somit ergibt sich als fünfte Zahl $3\cdot 7 +1 = 22$, also wieder eine gerade Zahl. Das führt zu meiner sechsten Zahl: $\frac{22}{2} = 11$. $11$ ist wieder ungerade, womit sich als siebte Zahl der Zahlenfolge die Zahl $3 \cdot 11 + 1 = 34$ ergibt. Als achte Zahl erhalte ich dann $\frac{34}{2} =17$ und als neunte Zahl $3\cdot 17 + 1= 52$. Meine zehnte Zahl lautet also $\frac{52}{2} = 26$ und meine elfte Zahl $\frac{26}{2}=13$ usw. 
+
+Meine Zahlenfolge sieht also so aus:
+
+9, 28, 14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1 und da endet das Spiel
+
+a) Warum endet das Spiel, wenn man bei der 1 angelangt ist.
+
+b) Mache mindestens drei Beispiele.
+
+c) Beweise, dass jede so konstruierte Zahlenfolge auf die Zahlen 4, 2, 1 endet. Oder widerlege diese Behauptung durch ein Gegenbeispiel.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+
+
 ## Geometrie
+
+#### Aufgabe 1 - Der Satz von Thales {-}
+Folgende Geogebra-Anwendung bietet eine Veranschaulichung einer geometrischen Gesetzmäßigkeit, die nach Thales benannt ist, der im 6. Jahrhundert v. Chr. in Milet lebte. Sie wird ihm zu Ehren als der Satz von Thales bezeichnet. Solltest du mehr über Thales von Milet wissen wollen, kannst du zum Beispiel [hier](https://de.wikipedia.org/wiki/Thales) nachlesen.
+
+<iframe scrolling="no" title="Satz von Thales" src="https://www.geogebra.org/material/iframe/id/wrvkufhn/width/1302/height/571/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="780px" height="500px" style="border:0px;"> </iframe>
+
+a) Bewege den Punkt C mit der Maus und versuche eine Vermutung aufzustellen, was Thales vor etwa 2600 Jahren herausfand.
+
+b) Überprüfe deine Vermutung anhand verschiedener Dreiecke. Bewege dazu auch die Punkte A und B, um neue Dreiecke zu erzeugen.
+
+c) Formuliere den Satz des Thales in der Wenn-Dann-Form.
+
+
+Im Folgenden geht es nun darum, den Satz des Thales zu beweisen. Das darfst du gerne erst einmal ganz alleine und selbst versuchen. Solltest du an der ein oder anderen Stelle nicht weiterkommen, gibt es hier Tipps.
+
+
+`r hide("Tipp 1: Was wusste Thales")`
+
++ Er soll gewusst haben, dass ein Kreis durch jeden Durchmesser in zwei gleiche Teile geteilt wird.
+
++ Ihm war bekannt, dass ein gleichschenkliges Dreieck zwei gleich große Basiswinkel hat.
+
++ Er wusste, dass die Winkelsumme im Dreieck 180° beträgt.
+
+#### {-}
+
+`r hide("Tipp 2: Hilflinie gefällig?")`
+
+Mache dir eine Skizze des Dreiecks mit dem Thaleskreis, ohne jedoch den rechten Winkel bei C als solchen zu kennzeichnen. Zeichne auch die Strecke $\overline{MC}$ ein. So entstehen die beiden Dreiecke AMC und BCM. 
+
+Überlege und notiere: Welche Besonderheiten weisen sie auf?
+
+#### {-}
+
+`r hide("Tipp 3: Eine besondere Skizze")`
+
+<iframe scrolling="no" title="Beweishilfe Satz von Thales" src="https://www.geogebra.org/material/iframe/id/rxagbxcs/width/1302/height/571/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="300px" style="border:0px;"> </iframe>
+
+Mache dir klar, warum die beiden Dreiecke AMC und BCM jeweils zwei gleich große Winkel haben.
+
+#### {-}
+
+`r hide("Tipp zu Tipp 3")`
+
+Denk daran: Der Radius des Kreises ist überall gleich lang!
+
+#### {-}
+
+`r hide("Tipp 4: Beachte die Winkel")`
+
+Bezeichne die Winkel der Dreiecke AMC und BCM mit griechischen Buchstaben, wobei gleich weite Winkel gleiche Buchstaben erhalten sollen. Stelle anschließend die Gleichung für die Winkelsumme des Dreiecks ABC auf.
+
+Durch Umformen der Gleichung erhältst du nun den gesuchten Satz.
+
+#### {-}
+
+d) Schreibe den Beweis des Satzes von Thales übersichtlich auf. Wo greifst du in die Trickkiste? Was folgt dann Schritt für Schritt?
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 2 {-}
+Experimentiere mit der folgenden Geogebra-Anwendung. Du kannst den Winkel $\phi$ verändern, den Punkt A bewegen und dir die Größe des Umfangs- und des Mittelpunktwinkels anzeigen lassen..
+
+<iframe scrolling="no" title="Umfangwinkelsatz" src="https://www.geogebra.org/material/iframe/id/smmrdrfz/width/1302/height/571/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="780px" height="500px" style="border:0px;"> </iframe>
+
+a) Formuliere einen mathematischen Satz, der den von dir vermuteten Sachverhalt beschreibt.
+
+b) Prüfe, ob deine Vermutung auch dann gilt, wenn M auf einer Dreieckseite oder außerhalb des Dreiecks liegt. Präzisiere (gegebenenfalls) deinen Satz.
+
+Im Folgenden geht es nun wieder darum, den aufgestellten Satz zu beweisen. Das darfst du gerne erst einmal ganz alleine und selbst versuchen. Solltest du an der ein oder anderen Stelle nicht weiterkommen, gibt es hier Tipps.
+
+`r hide("Tipp 1: Mache dir eine Skizze")`
+
+Zeichne die Ausgangsfigur:
+
++ Schlage einen Kreis mit Radius $r=5\;cm$ um den Mittelpunkt $M$
+
++ Markiere auf der Kreislinie zwei Punkte $P_1$ und $P_2$, so dass M nicht auf $\overline{P_1P_2}$ liegt und zeichne das Dreieck $P_1P_2M$.
+
++ Wähle nun einen Punkt A auf der Kreislinie so, dass M im Inneren des Dreiecks $P_2P_1A$ liegt und zeichne das Dreieck $P_2P_1A$.
+
+#### {-}
+
+`r hide("Tipp 2: Hilfslinie gefällig?")`
+
+Zeichne die Strecke $\overline{MA}$ ein. So entstehen die beiden Dreiecke $MP_1A$ und $AP_2M$. Überlege welche Besonderheiten die Dreiecke aufweisen.
+
+#### {-}
+
+`r hide("Tipp zu Tipp 2")`
+
+Denk daran: Der Radius des Kreises ist überall gleich lang!
+
+#### {-}
+
+`r hide("Tipp 3: Beachte die Basiswinkel")`
+
+Bezeichne die Basiswinkel der Dreiecke $P_2P_1M$, $AP_2M$ und $AMP_1$ mit den griechischen Buchstaben $\alpha$, $\beta$ und $\gamma$, wobei gleich weite Winkel gleiche Buchstaben erhalten sollen.
+
+Bezeichne weiterhin den Mittelpunktswinkel mit $\delta$ und den Umfangswinkel mit $\epsilon$. 
+
+Notiere, als welche Summe sich $\epsilon$ schreiben lässt.
+
+#### {-}
+
+`r hide("Tipp 4: Beachte die Winkel bei M")`
+
+Die Summe der drei Innenwinkel bei M beträgt 360°, demnach gilt also:
+
+$\delta + (180°-2 \cdot \ldots) + (180°- 2 \cdot \ldots) =  360°$
+
+Ergänze obige Gleichung durch die bei dir passenden Winkel. Fasse anschließend zusammen und forme um. Auf diese Weise erhältst du den gesuchten Satz.
+
+#### {-}
+
+c) Schreibe den Beweis des Satzes übersichtlich auf. Wo greifst du in die Trickkiste? Was folgt dann Schritt für Schritt?
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 3 {-}
+Auf einem Kreis liegen die Eckpunkte eines Vierecks so, dass eine Diagonale des Vierecks durch den Mittelpunkt des Kreises geht. 
+
+a) Skizziere den beschriebenen Sachverhalt.
+
+b) Welche speziellen Eigenschaften hat das Viereck?
+
+c) Formuliere einen mathematischen Satz und beweise ihn. Natürlich darfst du im Beweis auf bereits bewiesene Sätze verweisen.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+<!-- #### Aufgabe 4 {-} -->
+
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
+
 
 ## Funktionen
 
+#### Aufgabe 1 {-}
+Welcher der Graphen könnte zu welcher Zuordnung gehören? Begründe.
+
+<img src="./images/graphenzuordnen.png" height="200" />
+
+a) Zeit $\rightarrow$ zurückgelegter Weg bei konstanter Geschwindigkeit
+
+b) Brenndauer $\rightarrow$ Höhe einer brennenden Kerze
+
+c) Volumen $\rightarrow$ Füllhöhe einer bauchigen Vase
+
+d) Zeit $\rightarrow$ Geschwindigkeit beim Fahren einer Kurve
+
+e) Zeit $\rightarrow$ abstand vom Boden zum Schaukelbrett
+
+f) Alter eines Menschen $\rightarrow$ seine Körpergröße
+
+g) Überlege dir für den übrig gebliebenen Graphen eine passende Zuordnung. Begründe.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 2 {-}
+Aus der Lernstandserhebung von 2004:
+
+<img src="./images/schulweg.png" height="150" />
+
+Obige Abbildung zeigt die Schulwege von Paula, Maria und Peter. Alle drei besuchen die gleiche Schule, wohnen aber unterschiedlich weit weg von ihr. Entscheide, ob die folgenden Aussagen stimmen können oder nicht oder ob sie sich nicht beantworten lassen. Begründe deine Entscheidung.
+
+a) Paula wohnt am weitesten von der Schule entfernt.
+
+b) Peter geht am langsamsten und kommt daher auch als Letzter in der Schule an.
+
+c) Paula holt Maria von zu Hause ab. Maria ist aber noch nicht fertig, als Paula kommt.
+
+d) Peter hat etwas zu Hause vergessen, was ihm auf halbem Weg einfällt.
+
+e) Paula geht mit Maria schneller als ohne Maria.
+
+f) Maria wohnt einen Kilomenter von der Schule entfernt.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 3 {-}
+Das Auto von Herrn Huber verbraucht durchschnittlich 8 Liter Benzin auf 100km. Das Auto von Herrn Schreiber verbraucht nur 7 Liter auf 100km, das von Frau Krause 9 Liter auf 100 km. Die Tabelle und der Graph stellen den durchschnittlichen Benzinverbrauch je eines dieser Autos dar.
+
+```{r, 'kable'}
+```
+   Strecke in km | Verbrauch in Litern 
+-----------------|---------------------
+80 | 6,4
+150 | 12
+180 | 14,4
+260 | 20,8
+
+<img src="./images/FunktionenA3Graph.png" height="150" />
+
+a) Zu welchem Auto passt die Tabelle. Begründe.
+
+b) Zu welchem Auto passt der Graph. Begründe.
+
+c) Gib für den Benzinverbrauch der drei Autos je eine Funktionsgleichung an, welche die Anzahl der verbrauchten Liter y in Abhängigkeit von den gefahrenen Kilometern x angibt.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+<!-- #### Aufgabe 4 {-} -->
+
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
+
+
 ## Daten und Zufall
+
+#### Aufgabe 1 {-}
+Frau D. möchte im Urlaub in die Berge. Ihr Mann würde gerne einmal die holländische Küste fahren. Alle Kinder wollen zum Plantschen zur Oma. 
+
+Die Familie einigt sich darauf, das Reiseziel auszulosen. Frau D. schlägt folgendes System vor: Nacheinander werden zwei 1-Euro-Münzen geworfen. Falls beide Münzen Zahl zeigen, fährt die Familie nach Holland. Falls beide Münzen Kopf zeigen, geht es zur Oma. Falls eine Münze Zahl und eine Münze Kopf zeigt, fährt die Familie in die Berge.
+
+a) Wo verbringt die Familie wahrscheinlich ihren Urlaub? Begründe deine Antwort.
+
+b) Die Kinder sind mit dem Verfahren nicht einverstanden. Sie wollen die Entscheidung mit Hilfe von Würfeln treffen, damit die drei Urlaubsziele gleich wahrscheinlich sind. Entwickle einen entsprechenden Vorschlag.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 2 {-}
+Zu Beginn des fünften Schuljahres wurden klassenintern zahlreiche Umfragen durchgeführt. 50% der Schüler:innen der Klasse gaben damals an, eine Katze zu besitzen, 20% sagten, sie hätten einen Hund, 17% hatten einen Vogel, 15% einen Hamster und 10% ein Kaninchen. 18% der Schüler:innen gaben an, kein Haustier zu besitzen.
+
+a) Jan hat versucht das Umfrageergebnis in einem Kreisdiagramm darzustellen. Leider ist Frau D. nicht einverstanden. Warum nicht?
+
+<img src="./images/kreisdiagramm.png" height="150" />
+
+b) Jan ist verzweifelt. Egal wie oft er zählt kommt er auf die gleichen Prozentangaben. Wie kann es zu derartigen Umfrageergebnissen kommen?
+
+c) Zeichne ein Diagramm, das zu den Umfrageergebnissen passt.
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+

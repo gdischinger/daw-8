@@ -59,7 +59,7 @@ cat('<hr style="background-color:#3C6690;height:2px">')
 
 ### Aktuelles {-}
 
-+ Stichtag für das 1.Kapitel *Definieren* ist der **17. Mai**
++ Bearbeite bitte an den Tagen, an denen du zuhause lernst die Aufgaben aus Kapitel 2.2
 
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
