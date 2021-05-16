@@ -153,7 +153,7 @@ Gib für folgende besondere Dreiecke eine Definition an.
 
 a) Rechtwinklige Dreiecke.
 
-`r hide("Lösung")`
+`r hide("Lösungvorschlag")`
 
 Ein Dreieck, das einen rechten Winkel hat, heißt rechtwinkliges Dreieck.
 
@@ -161,7 +161,7 @@ Ein Dreieck, das einen rechten Winkel hat, heißt rechtwinkliges Dreieck.
 
 b) Gleichschenklige Dreiecke.
 
-`r hide("Lösung")`
+`r hide("Lösungsvorschlag")`
 
 Ein Dreieck, das zwei gleich lange Seiten hat, heißt gleichschenkliges Dreieck.
 
@@ -169,7 +169,7 @@ Ein Dreieck, das zwei gleich lange Seiten hat, heißt gleichschenkliges Dreieck.
 
 c) Gleichseitige Dreiecke.
 
-`r hide("Lösung")`
+`r hide("Lösungsvorschlag")`
 
 Ein Dreieck, dessen drei Seiten alle gleich lang sind, heißt gleichseitiges Dreieck.
 
