@@ -7,17 +7,49 @@ Entscheide, ob die folgenden Aussagen wahr oder falsch sind. Begründe deine Ent
 
 a) Jede natürliche Zahl lässt sich als Bruch schreiben.
 
+`r hide("Lösung")`
+
+Diese Aussage ist wahr, denn man kann jede natürliche Zahl $n$ schreiben als $\frac{n}{1}$.
+
+#### {-}
+
 b) Subtrahiert man zwei natürliche Zahlen voneinander, erhält man eine natürliche Zahl.
+
+`r hide("Lösung")`
+
+Diese Aussage ist falsch. Hier ist ein Gegenbeispiel: $2-5=-3$
+
+#### {-}
 
 c) Multipliziert man zwei irrationale Zahlen, erhält man immer eine irrationale Zahl.
 
+`r hide("Lösung")`
+
+Diese Aussage ist falsch. Hier ist ein Gegenbeispiel: $\sqrt{2} \cdot \sqrt{2} = 2$
+
+#### {-}
+
 d) Da Wurzeln immer positiv sind, gibt es keine negativen irrationalen Zahlen.
 
+`r hide("Lösung")`
+
+Diese Aussage ist falsch. Hier ist ein Gegenbeispiel: $-\sqrt{2}$ ist auch eine irrationale Zahl
+
+#### {-}
+
 e) Es gibt irrationale Zahlen, deren 1000-Faches eine rationale Zahl ist.
+
+`r hide("Lösung")`
+
+Diese Aussage ist falsch. Das Produkt einer rationalen Zahl (hier 1000) und einer irrationalen Zahl ist immer irrational. Bei der Dezimaldarstellung der irrationalen Zahl bewirkt die Multiplikation mit 1000 nur eine "Verschiebung des Kommas" um drei Stellen nach rechts, das Produkt besitzt aber weiterhin unendlich viele Nachkommastellen, die nicht periodisch sind.
+
+#### {-}
 
 f) Eine Dezimalzahl, die unendlich viele Nachkommastellen hat, ist immer irrational.
 
 `r hide("Lösung")`
+
+Diese Aussage ist falsch. Hier sind Gegenbeispiele: Periodische Dezimalzahlen besitzen unendlich viele Nachkommastellen, lassen sich jedoch als Bruch darstellen und sind daher rational, z.B. $\frac{1}{3}=0,\bar{3}=0,333333\ldots$
 
 #### {-}
 
@@ -46,6 +78,18 @@ Den Nachfolger einer natürlichen Zahl $n$ kann man als $n+1$ schreiben. Die Sum
 
 `r hide("Lösung")`
 
+Fünf aufeinander folgende Zahlen sind: $n$, $n+1$, $n+2$, $n+3$ und $n+4$.
+
+Nun muss man die Summe der fünf aufeinander folgenden Zahlen bilden und den entstandenen Term zusammenfassen:
+
+$$\begin{align}
+&\quad n + (n+1) + (n+2) + (n+3) + (n+4) =\\
+&= n+n+1+n+2+n+3+n+4=\\
+&= 5n+10 = 5 \cdot(n+2)
+\end{align}$$
+
+Da der Term $5 \cdot (n+2)$ den Faktor $5$ enthält, ist die Summe von fünf aufeinander folgenden Zahlen durch $5$ teilbar.
+
 #### {-}
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
@@ -57,7 +101,32 @@ Frau D. hat Langeweile. Daher wirft sie nun mit Behauptungen nur so um sich.
  
 a) Die Summe zweier ungerader natürlicher Zahlen ist eine gerade Zahl.
 
+`r hide("Lösung")`
+
+Zunächst wählt man für die beiden ungeraden natürlichen Zahlen zwei *verschiedene* Terme. Die beiden ungeraden Zahlen dürfen schließlich verschieden sein.
+
+Für die erste ungerade Zahl wählt man $2n+1$, für die zweite ungerade Zahl $2m+1$. $m$ und $n$ sind dabei natürliche Zahlen. 
+
+Es ist also egal, was die gemeine Frau D. für n und m einsetzt, sie erhält immer ungerade Zahlen. Probier es aus.
+
+Die Behauptung ist nun, die Summe dieser beiden Zahlen sei gerade. Für die Summe gilt:
+
+$$(2n+1)+(2m+1)=2n+1+2m+1=2n+2m+2=2\cdot (n+m+1)$$
+
+Da der Term $2\cdot(n+m+1)$ den Faktor $2$ enthält, ist die Summe der beiden ungeraden Zahlen durch $2$ teilbar. Die Summe der beiden ungeraden Zahlen ist also eine gerade Zahl.
+
+#### {-}
+
 b) Quadriert man eine ungerade Zahl, so ist das Ergebnis ungerade.
+
+`r hide("Lösung")`
+
+Ungerade natürliche Zahlen haben die Darstellung $2n+1$, wobei $n$ eine natürliche Zahl ist. Für das Quadrat dieser Zahl (ACHTUNG: 1. binomische Formel!) gilt nun:
+
+$$(2n+1)^2=4n^2+4n+1=2\cdot\underbrace{(2n^2+2n)}_{irgendwas}+1$$
+Damit ist das Quadrat einer ungeraden natürlichen Zahl eine ungerade natürliche Zahl.
+
+#### {-}
 
 c) Die Summe von vier aufeinander folgenden natürlichen Zahlen ist niemals durch vier, aber immer durch zwei teilbar.
 
@@ -70,6 +139,22 @@ Führe Variablen und Terme ein! Betrachte Beispiele!
 #### {-}
 
 `r hide("Lösung")`
+
+Vier aufeinander folgende Zahlen sind: $n$, $n+1$, $n+2$ und $n+3$.
+
+Nun muss man die Summe der vier aufeinander folgenden Zahlen bilden und den entstandenen Term zusammenfassen:
+
+$$\begin{align}
+&\quad n + (n+1) + (n+2) + (n+3)  =\\
+&= n+n+1+n+2+n+3=\\
+&= 4n+6 = 2 \cdot(2n+3)
+\end{align}$$
+
+Da der Term $2 \cdot (2n+3)$ den Faktor $2$ enthält, ist die Summe von vier aufeinander folgenden Zahlen durch $2$ teilbar.
+
+Wenn die Summe auch durch $4$ teilbar wäre, müsste man im Term $4n+6$ den Faktor $4$ ausklammern können. Das ist aber nicht möglich.
+
+Natürlich kannst du auch argumentieren, dass der zweite Faktor des Produktes $2 \cdot (2n+3)$, also $2n+3$ nicht durch $2$ teilbar sein kann.
 
 #### {-}
 
@@ -91,6 +176,22 @@ Die erste Person nennt das Ergebnis. Der Hellseher subtrahiert davon 250 und lie
 Begründe dieses Vorgehen. Stelle dazu einen Rechenterm für die drei Zahlen auf.
 
 `r hide("Lösung")`
+
+Der erste Würfel zeigt die Zahl $a$. ($a$ kann dann natürlich 1, 2, 3, 4, 5 oder 6 sein.)
+
+Der zweite Würfel zeigt die Zahl $b$. ($b$ kann natürlich auch 1, 2, 3, 4, 5 oder 6 sein.)
+
+Der dritte Würfel zeigt die Zahl $c$. (Und natürlich kann auch $c$ 1, 2, 3, 4, 5 oder 6 sein.)
+
+Die Rechenanweisung des *Hellsehers* kann dann wie folgt als Term geschrieben werden:
+
+$$\begin{align} &\quad\; [(2a+5)\cdot 5 + b] \cdot 10 +c =\\
+&= [10a+25+b]\cdot 10 +c =\\
+&= 100a + 250 +10b+ c =\\
+&= 100a+10b+c+250
+\end{align}$$
+
+Wenn der *Hellseher* von $100a+10b+c+250$ $250$ subtrahiert, erhält er $100a+10b+c$. Er kann also die gewürfelte Augenzahl $a$ (erster Würfel) als Hunderterziffer, die Augenzahl $b$ (zweiter Würfel) als Zehnerziffer und die Augenzahl $c$ (dritter Würfel) als Einerziffer ablesen.
 
 #### {-}
 
@@ -118,9 +219,31 @@ Meine Zahlenfolge sieht also so aus:
 
 9, 28, 14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1 und da endet das Spiel
 
-a) Warum endet das Spiel, wenn man bei der 1 angelangt ist.
+a) Warum endet das Spiel, wenn man bei der 1 angelangt ist?
 
-b) Mache mindestens drei Beispiele.
+b) Mache mindestens drei Beispiele. Die Informatiker unter euch dürfen natürlich auch python rechnen lassen.
+
+<!-- `r hide("Lösung")` -->
+
+<!-- collatzListe = [] -->
+
+<!-- def collatz(n): -->
+<!--     collatzListe.append(n) -->
+<!--     if n==1: -->
+<!--         print collatzListe -->
+<!--         print len(collatzListe) -->
+<!--     else: -->
+<!--         if isInteger(n/2): -->
+<!--             n= int(n/2) -->
+<!--             collatz(n) -->
+<!--         else: -->
+<!--             n=3*n+1 -->
+<!--             collatz(n) -->
+
+
+<!-- collatz(27) -->
+
+<!-- #### {-} -->
 
 c) Beweise, dass jede so konstruierte Zahlenfolge auf die Zahlen 4, 2, 1 endet. Oder widerlege diese Behauptung durch ein Gegenbeispiel.
 
@@ -132,6 +255,25 @@ c) Beweise, dass jede so konstruierte Zahlenfolge auf die Zahlen 4, 2, 1 endet. 
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
+#### Aufgabe 6 {-}
+Denke dir eine beliebige Zahl. Verdopple diese Zahl und addiere anschließend 7. Multipliziere das Ergebnis mit 3 und addiere anschließend 3. Multipliziere das Ergebnis erneut mit 3 und subtrahiere vom Ergebnis die Summe aus deiner anfangs gedachten Zahl und 4. Teile das Ergebnis durch 17 und subtrahiere erneut deine anfangs gedachte Zahl.
+
+a) Führe die Anweisungen für drei verschiedene Zahlen durch. Was fällt dir auf?
+
+b) Schreibe für deine anfangs gedachte Zahl die Variable x und stelle einen Term auf, der zu den Anweisungen passt.
+
+c) Vereinfache den Term aus b) so weit wie möglich und begründe die Entdeckung aus a).
+
+<!-- Schulbuch S. 165 Aufgabe 10 -->
+
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
 
 ## Geometrie
@@ -147,6 +289,11 @@ b) Überprüfe deine Vermutung anhand verschiedener Dreiecke. Bewege dazu auch d
 
 c) Formuliere den Satz des Thales in der Wenn-Dann-Form.
 
+`r hide("Lösung")`
+
+Wenn C ein Punkt auf dem Halbkreis über der Strecke $\overline{AB}$ ist, dann hat das Dreieck ABC bei C einen rechten Winkel
+
+#### {-}
 
 Im Folgenden geht es nun darum, den Satz des Thales zu beweisen. Das darfst du gerne erst einmal ganz alleine und selbst versuchen. Solltest du an der ein oder anderen Stelle nicht weiterkommen, gibt es hier Tipps.
 
@@ -194,6 +341,20 @@ Durch Umformen der Gleichung erhältst du nun den gesuchten Satz.
 d) Schreibe den Beweis des Satzes von Thales übersichtlich auf. Wo greifst du in die Trickkiste? Was folgt dann Schritt für Schritt?
 
 `r hide("Lösung")`
+
+Zunächst zeichnet man die Strecke $\overline{MC}$ als Hilfslinie ein (Trickkiste!). Auf diese Weise zerlegt man das Dreieck ABC in zwei kleinere Dreiecke: das Dreieck AMC und das Dreieck MBC.
+
+Die Dreiecke AMC und MBC sind beide gleichschenklig: Die Strecken $\overline{AM}$, $\overline{MC}$ und $\overline{MB}$ sind alle gleich lang. Ihre Länge entspricht dem Radius des Kreises.
+
+Da die Dreiecke AMC und MBC gleichschenklig sind, haben sie auch zwei gleich weite Basiswinkel. Notiert man das alles in einer Skizze, sieht diese wie folgt aus:
+
+<img src="./images/SkizzeThales.png" height="300" />
+
+Wie du weißt, beträgt die Winkelsumme im Dreieck 180°.
+
+Damit gilt im Dreieck ABC also: $2 \alpha + 2 \beta = 180°$
+
+Dividiert man nun noch beide Seiten der Gleichung durch 2, ergibt sich $\alpha + \beta = 90°$. Damit ist der Satz des Thales bewiesen.
 
 #### {-}
 
@@ -283,16 +444,20 @@ c) Formuliere einen mathematischen Satz und beweise ihn. Natürlich darfst du im
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-<!-- #### Aufgabe 4 {-} -->
+#### Aufgabe 4 {-}
+Bestimme die fehlenden Winkel.
 
+<img src="./images/winkelAusrechnen1.png" height="170" />
 
-<!-- `r hide("Lösung")` -->
+<!-- Schulbuch S. 171 Aufgabe 1c -->
 
-<!-- #### {-} -->
+`r hide("Lösung")`
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
 
 ## Funktionen
