@@ -1,4 +1,30 @@
 # Argumentieren
+Um gut argumentieren zu können, musst du natürlich auch ein bisschen etwas wissen. Hier also ein Überblick über die "Argumentationsbasis", mit der sich die Aufgaben aus den Bereichen "Arithmetik und Algebra" und "Geometrie" gut meistern lassen:
+
+**Arithmetik und Algebra**
+
++ Gerade Zahl: $2n$, wobei $n$ eine natürliche Zahl ist.
+
++ Ungerade Zahl: $2n+1$, wobei $n$ eine natürliche Zahl ist.
+
++ Durch 5 teilbare Zahl: $5n$, wobei $n$ eine natürliche Zahl ist. (Analog: durch 7 teilbare Zahl, durch 11 teilbare Zahl usw.)
+
++ Quadratzahl: $n^2$
+
++ Drei aufeinander folgende Zahlen: $n$, $n+1$, $n+2$
+
+
+**Geometrie**
+
++ Die Winkelsumme im Dreieck beträgt 180°.
+
++ Alle Punkte auf der Kreislinie haben denselben Abstand vom Mittelpunkt des Kreises (nämlich den Radius r).
+
+
+**Nötiges Handwerkszeug**
+
+Zusätzlich zu diesen immer wiederkehrenden Fakten musst du **Terme aufstellen und zusammenfassen** können. Solltest du hier noch Schwierigkeiten haben, arbeite bitte das Zusatzmaterial durch. Dort findest du viele alte Aufgaben.
+
 
 ## Arithmetik und Algebra
 
@@ -255,7 +281,49 @@ c) Beweise, dass jede so konstruierte Zahlenfolge auf die Zahlen 4, 2, 1 endet. 
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-#### Aufgabe 6 {-}
+#### Aufgabe 6 - Variationen eines Satzes {-}
+##### a) Grundaufgabe {-}
+Beweise oder widerlege folgende Behauptung:
+
+> Die Summe von drei aufeinander folgenden Zahlen ist durch 3 teilbar.
+
++ Mache drei Beispiele.
+
++ Wenn du ein Gegenbeispiel findest, genügt das, um die Behauptung zu widerlegen.
+
++ Solltest du kein Gegenbeispiel finden, versuche einen Term aufzustellen und mit dessen Hilfe die Behauptung durch geschicktes Zusammenfassen des Termes zu zeigen.
+
+##### b) Erste Abwandlung {-}
+Obiger Satz wird nun abgewandelt: Ist die Summe von vier aufeinander folgenden Zahlen durch 4 teilbar? Und die Summe von fünf aufeinander folgenden Zahlen durch 5? Was ist entsprechend mit 6, 7, 8 oder 9 aufeinander folgenden Zahlen?
+
++ Nach einigen Beispielen wirst du eine Vermutung formulieren können. Notiere diese.
+
++ Kannst du einen allgemeinen Satz für k Summanden formulieren? $n+(n+1)+(n+2)+(n+3)+\ldots+(n+k-1)=$
+
+##### c) Zweite Abwandlung {-}
+Nun sollen es keine drei aufeinander folgenden Zahlen, sondern drei Zahlen mit gleichem Abstand sein. 
+
+* Mache Versuche:
+
+  + Abstand 2: $3+5+7=$
+
+  + Abstand 3: $3+6+9=$
+
+* Formuliere wieder eine Vermutung und notiere diese.
+
+* Jetzt kommt die Verallgemeinerung: Drei Summanden mit Abstand d. Schreibe die Summe allgemein wie im Aufgabenteil a) oder b) und führe einen Beweis.
+
+<!-- Serviceband Lambacher Schweizer 8 - S. 68 Variation eines Satzes -->
+
+`r hide("Lösung")`
+
+#### {-}
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+#### Aufgabe 7 {-}
 Denke dir eine beliebige Zahl. Verdopple diese Zahl und addiere anschließend 7. Multipliziere das Ergebnis mit 3 und addiere anschließend 3. Multipliziere das Ergebnis erneut mit 3 und subtrahiere vom Ergebnis die Summe aus deiner anfangs gedachten Zahl und 4. Teile das Ergebnis durch 17 und subtrahiere erneut deine anfangs gedachte Zahl.
 
 a) Führe die Anweisungen für drei verschiedene Zahlen durch. Was fällt dir auf?
@@ -274,6 +342,70 @@ c) Vereinfache den Term aus b) so weit wie möglich und begründe die Entdeckung
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
+
+<!-- #### Aufgabe 8 {-} -->
+<!-- Frau D. behauptet: -->
+
+<!-- >"Setzt man einen natürliche Zahl n in den Term $8n+1$ ein, so erhält man immer eine ungerade Zahl". -->
+
+<!-- a) Entscheide, ob Frau D. recht hat. Begründe deine Entscheidung. -->
+
+<!-- b) Lässt sich mit Hilfe des Terms $8n+1$ jede ungerade Zahl darstellen? Begründe. -->
+
+<!-- c) Gib drei weitere Terme an, mit denen man nur ungerade Zahlen darstellen kann, und drei, mit welchen man nur gerade Zahlen darstellen kann. -->
+
+<!-- d) Gibt es einen Term, mit dem man jede ungerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an. -->
+
+<!-- e) Gibt es einen Term, mit dem man jede gerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an. -->
+
+<!-- <!-- Schulbuch S. 180 Aufgabe 8 --> -->
+
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
+
+<!-- #### Aufgabe 9 {-} -->
+<!-- Überprüfe, ob die folgende Aussage stets für drei aufeinander folgende natürliche Zahlen gilt. Gib ein Gegenbeispiel an oder begründe ausführlich. -->
+
+<!-- Das Produkt von drei aufeinander folgenden Zahlen ist immer durch 6 teilbar. -->
+
+<!-- <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.15 Aufgabe Z16 ZAHLENFOLGEN e) --> -->
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
+
+<!-- #### Aufgabe 10 {-} -->
+<!-- Frau D. kennt einen Rechentrick: -->
+
+<!-- >"Wenn ich zwei natürliche Zahlen zwischen 10 und 20 miteinander multiplizieren soll, dann addiere ich zur ersten Zahl die Einerziffer der zweiten Zahl; an diese Summe hänge ich eine Null an und addiere dann noch das Produkt der beiden Einerziffern dazu." -->
+
+<!-- a) Führe Frau D.'s Rechentrick mit den Zahlen 12 und 16 durch. Überprüfe, ob das Ergebnis dieser Rechnung wirklich das Produkt $12 \cdot 16$ ergibt. -->
+
+<!-- b) Verwende für die erste Zahl den Term $10+x$ und für die zweite Zahl den Term $10+y$. Wie lautet dann ein Term für Frau D.'s Rechentrick? -->
+
+<!-- c) Überprüfe mit Hilfe dieses Terms, ob Frau D.'s Rechentrick immer funktioniert. Ergibt das Produkt der beiden Zahlen $10+x$ und $10+y$ immer diesen Term? -->
+
+<!-- d) Kannst du einen Rechentrick formulieren, der für das Produkt zweier Zahlen zwischen 20 und 30 gilt? -->
+
+<!-- <!-- Stark (rotes Heft) VERA 8 Mathematik S.148 Aufgabe 5 --> -->
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
 
 
 ## Geometrie
@@ -458,6 +590,53 @@ Bestimme die fehlenden Winkel.
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
+
+<!-- #### Aufgabe 5 {-} -->
+<!-- Begründe, dass die Winkel $\alpha$ und $\beta$ gleich groß sind. -->
+
+<!-- <img src="./images/winkelArgumentierenA5.png" height="200" /> -->
+
+<!-- <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.18 Aufgabe M11 WINKEL --> -->
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
+
+<!-- #### Aufgabe 6 {-} -->
+<!-- Ein Fünfeck, bei dem alle Seiten gleich lang und alle Winkel gleich groß sind, bezeichnet man als regelmäßiges Fünfeck oder Pentagon. -->
+
+<!-- <img src="./images/fuenfeck.png" height="200" /> -->
+
+<!-- Gib die Größen aller Innenwinkel des Fünfecks an. -->
+
+<!-- <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.22 Aufgabe RF - Magisches Fünfeck --> -->
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
+
+<!-- #### Aufgabe 7 {-} -->
+<!-- Bestimme die gekennzeichneten Winkel rechnerisch. Begründe ausführlich. -->
+
+<!-- <img src="./images/winkelAusrechnen2.png" height="170" /> -->
+
+<!-- <!-- Schulbuch S. 181 Aufgabe 12c --> -->
+
+<!-- `r hide("Lösung")` -->
+
+<!-- #### {-} -->
+
+<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
+<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
+<!-- ``` -->
 
 
 ## Funktionen
