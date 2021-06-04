@@ -343,69 +343,69 @@ c) Vereinfache den Term aus b) so weit wie möglich und begründe die Entdeckung
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-<!-- #### Aufgabe 8 {-} -->
-<!-- Frau D. behauptet: -->
+#### Aufgabe 8 {-}
+Frau D. behauptet:
 
-<!-- >"Setzt man einen natürliche Zahl n in den Term $8n+1$ ein, so erhält man immer eine ungerade Zahl". -->
+>"Setzt man einen natürliche Zahl n in den Term $8n+1$ ein, so erhält man immer eine ungerade Zahl".
 
-<!-- a) Entscheide, ob Frau D. recht hat. Begründe deine Entscheidung. -->
+a) Entscheide, ob Frau D. recht hat. Begründe deine Entscheidung.
 
-<!-- b) Lässt sich mit Hilfe des Terms $8n+1$ jede ungerade Zahl darstellen? Begründe. -->
+b) Lässt sich mit Hilfe des Terms $8n+1$ jede ungerade Zahl darstellen? Begründe.
 
-<!-- c) Gib drei weitere Terme an, mit denen man nur ungerade Zahlen darstellen kann, und drei, mit welchen man nur gerade Zahlen darstellen kann. -->
+c) Gib drei weitere Terme an, mit denen man nur ungerade Zahlen darstellen kann, und drei, mit welchen man nur gerade Zahlen darstellen kann.
 
-<!-- d) Gibt es einen Term, mit dem man jede ungerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an. -->
+d) Gibt es einen Term, mit dem man jede ungerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an.
 
-<!-- e) Gibt es einen Term, mit dem man jede gerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an. -->
+e) Gibt es einen Term, mit dem man jede gerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an.
 
-<!-- <!-- Schulbuch S. 180 Aufgabe 8 --> -->
+<!-- Schulbuch S. 180 Aufgabe 8 -->
 
 
-<!-- `r hide("Lösung")` -->
+`r hide("Lösung")`
 
-<!-- #### {-} -->
+#### {-}
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
-<!-- #### Aufgabe 9 {-} -->
-<!-- Überprüfe, ob die folgende Aussage stets für drei aufeinander folgende natürliche Zahlen gilt. Gib ein Gegenbeispiel an oder begründe ausführlich. -->
+#### Aufgabe 9 {-}
+Überprüfe, ob die folgende Aussage stets für drei aufeinander folgende natürliche Zahlen gilt. Gib ein Gegenbeispiel an oder begründe ausführlich.
 
-<!-- Das Produkt von drei aufeinander folgenden Zahlen ist immer durch 6 teilbar. -->
+Das Produkt von drei aufeinander folgenden Zahlen ist immer durch 6 teilbar.
 
-<!-- <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.15 Aufgabe Z16 ZAHLENFOLGEN e) --> -->
+<!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.15 Aufgabe Z16 ZAHLENFOLGEN e) -->
 
-<!-- `r hide("Lösung")` -->
+`r hide("Lösung")`
 
-<!-- #### {-} -->
+#### {-}
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
-<!-- #### Aufgabe 10 {-} -->
-<!-- Frau D. kennt einen Rechentrick: -->
+#### Aufgabe 10 {-}
+Frau D. kennt einen Rechentrick:
 
-<!-- >"Wenn ich zwei natürliche Zahlen zwischen 10 und 20 miteinander multiplizieren soll, dann addiere ich zur ersten Zahl die Einerziffer der zweiten Zahl; an diese Summe hänge ich eine Null an und addiere dann noch das Produkt der beiden Einerziffern dazu." -->
+>"Wenn ich zwei natürliche Zahlen zwischen 10 und 20 miteinander multiplizieren soll, dann addiere ich zur ersten Zahl die Einerziffer der zweiten Zahl; an diese Summe hänge ich eine Null an und addiere dann noch das Produkt der beiden Einerziffern dazu."
 
-<!-- a) Führe Frau D.'s Rechentrick mit den Zahlen 12 und 16 durch. Überprüfe, ob das Ergebnis dieser Rechnung wirklich das Produkt $12 \cdot 16$ ergibt. -->
+a) Führe Frau D.'s Rechentrick mit den Zahlen 12 und 16 durch. Überprüfe, ob das Ergebnis dieser Rechnung wirklich das Produkt $12 \cdot 16$ ergibt.
 
-<!-- b) Verwende für die erste Zahl den Term $10+x$ und für die zweite Zahl den Term $10+y$. Wie lautet dann ein Term für Frau D.'s Rechentrick? -->
+b) Verwende für die erste Zahl den Term $10+x$ und für die zweite Zahl den Term $10+y$. Wie lautet dann ein Term für Frau D.'s Rechentrick?
 
-<!-- c) Überprüfe mit Hilfe dieses Terms, ob Frau D.'s Rechentrick immer funktioniert. Ergibt das Produkt der beiden Zahlen $10+x$ und $10+y$ immer diesen Term? -->
+c) Überprüfe mit Hilfe dieses Terms, ob Frau D.'s Rechentrick immer funktioniert. Ergibt das Produkt der beiden Zahlen $10+x$ und $10+y$ immer diesen Term?
 
-<!-- d) Kannst du einen Rechentrick formulieren, der für das Produkt zweier Zahlen zwischen 20 und 30 gilt? -->
+d) Kannst du einen Rechentrick formulieren, der für das Produkt zweier Zahlen zwischen 20 und 30 gilt?
 
-<!-- <!-- Stark (rotes Heft) VERA 8 Mathematik S.148 Aufgabe 5 --> -->
+<!-- Stark (rotes Heft) VERA 8 Mathematik S.148 Aufgabe 5 -->
 
-<!-- `r hide("Lösung")` -->
+`r hide("Lösung")`
 
-<!-- #### {-} -->
+#### {-}
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
 
 ## Geometrie
@@ -591,52 +591,52 @@ Bestimme die fehlenden Winkel.
 cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-<!-- #### Aufgabe 5 {-} -->
-<!-- Begründe, dass die Winkel $\alpha$ und $\beta$ gleich groß sind. -->
+#### Aufgabe 5 {-}
+Begründe, dass die Winkel $\alpha$ und $\beta$ gleich groß sind.
 
-<!-- <img src="./images/winkelArgumentierenA5.png" height="200" /> -->
+<img src="./images/winkelArgumentierenA5.png" height="200" />
 
-<!-- <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.18 Aufgabe M11 WINKEL --> -->
+<!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.18 Aufgabe M11 WINKEL -->
 
-<!-- `r hide("Lösung")` -->
+`r hide("Lösung")`
 
-<!-- #### {-} -->
+#### {-}
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
-<!-- #### Aufgabe 6 {-} -->
-<!-- Ein Fünfeck, bei dem alle Seiten gleich lang und alle Winkel gleich groß sind, bezeichnet man als regelmäßiges Fünfeck oder Pentagon. -->
+#### Aufgabe 6 {-}
+Ein Fünfeck, bei dem alle Seiten gleich lang und alle Winkel gleich groß sind, bezeichnet man als regelmäßiges Fünfeck oder Pentagon.
 
-<!-- <img src="./images/fuenfeck.png" height="200" /> -->
+<img src="./images/fuenfeck.png" height="200" />
 
-<!-- Gib die Größen aller Innenwinkel des Fünfecks an. -->
+Gib die Größen aller Innenwinkel des Fünfecks an.
 
-<!-- <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.22 Aufgabe RF - Magisches Fünfeck --> -->
+<!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.22 Aufgabe RF - Magisches Fünfeck -->
 
-<!-- `r hide("Lösung")` -->
+`r hide("Lösung")`
 
-<!-- #### {-} -->
+#### {-}
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
-<!-- #### Aufgabe 7 {-} -->
-<!-- Bestimme die gekennzeichneten Winkel rechnerisch. Begründe ausführlich. -->
+#### Aufgabe 7 {-}
+Bestimme die gekennzeichneten Winkel rechnerisch. Begründe ausführlich.
 
-<!-- <img src="./images/winkelAusrechnen2.png" height="170" /> -->
+<img src="./images/winkelAusrechnen2.png" height="170" />
 
-<!-- <!-- Schulbuch S. 181 Aufgabe 12c --> -->
+<!-- Schulbuch S. 181 Aufgabe 12c -->
 
-<!-- `r hide("Lösung")` -->
+`r hide("Lösung")`
 
-<!-- #### {-} -->
+#### {-}
 
-<!-- ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE} -->
-<!-- cat('<hr style="background-color:#3C6690;height:2px">') -->
-<!-- ``` -->
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
 
 
 ## Funktionen
