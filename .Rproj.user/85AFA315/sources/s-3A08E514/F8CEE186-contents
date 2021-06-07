@@ -293,12 +293,73 @@ Beweise oder widerlege folgende Behauptung:
 
 + Solltest du kein Gegenbeispiel finden, versuche einen Term aufzustellen und mit dessen Hilfe die Behauptung durch geschicktes Zusammenfassen des Termes zu zeigen.
 
+`r hide("Lösung")`
+
+**3 Beispiele**
+
+$1+2+3=6$, $6$ ist durch $3$ teilbar.
+
+$14+15+16= 45$, $45$ ist durch $3$ teilbar.
+
+$8+9+10= 27$, $27$ ist durch $3$ teilbar.
+
+**Beweis**
+
+Drei aufeinander folgende Zahlen sind: $n$, $n+1$ und $n+2$.
+
+$$\begin{align} 
+& \; n+(n+1)+(n+2) =\\
+= & \;n+n+1+n+2 \quad = \\
+= & \; 3n +3 = 3 \cdot (n+1)
+\end{align}$$
+
+Da der Term $3 \cdot (n+1)$ den Faktor 3 enthält, ist die Summe von drei aufeinander folgenden Zahlen durch 3 teilbar.
+
+#### {-}
+
 ##### b) Erste Abwandlung {-}
 Obiger Satz wird nun abgewandelt: Ist die Summe von vier aufeinander folgenden Zahlen durch 4 teilbar? Und die Summe von fünf aufeinander folgenden Zahlen durch 5? Was ist entsprechend mit 6, 7, 8 oder 9 aufeinander folgenden Zahlen?
 
 + Nach einigen Beispielen wirst du eine Vermutung formulieren können. Notiere diese.
 
 + Kannst du einen allgemeinen Satz für k Summanden formulieren? $n+(n+1)+(n+2)+(n+3)+\ldots+(n+k-1)=$
+
+`r hide("Lösung")`
+
+**Vermutung**
+
+Für ungerade Zahlen $k$ ist die Summe von $k$ aufeinander folgenden natürlichen Zahlen durch $k$ teilbar.
+
+Für gerade Zahlen $k$ gilt obiger Satz nicht. (Die Summe ist dann durch $\frac{k}{2}$ teilbar.)
+
+**Überlegungen**
+
+Die Summe aus k Summanden kann man folgendermaßen umformen:
+
+$$\begin{align} 
+&\overbrace{n}^{1. Summand}+\underbrace{n+1}_{2. Summand}+\overbrace{n+2}^{3.Summand}+\underbrace{n+3}_{4.Summand}+\ldots+\overbrace{n+k-1}^{k-ter Summand} =\\
+{}\\
+&=k\cdot n + (1+2+3+\ldots+k-1)
+\end{align}$$
+
+Dabei gilt $1+2+3+\ldots k-1 = \frac{(k-1)}{2} \cdot k$.
+
+(Denk daran: Du darfst die Summe umschreiben - wie beim Gläser umschütten!: $1+ (k-1) = k$ genauso wie $2+(k-2)$ und $3+(k-3)$ usw.. Es gibt hier $\frac{k-1}{2}$ viele Paare, die zusammen $k$ ergeben.)
+
+Also kann man obige Summe folgendermaßen schreiben: $n+(n+1)+(n+2)+(n+3)+\ldots+(n+k-1)= kn + k \cdot \frac{k-1}{2} = k \cdot (n+ \frac{k-1}{2})$
+
+**k ist ungerade**
+
+Dividiert man die Summe durch $k$, bleibt $n+\frac{k-1}{2}$ und das ist, wenn $k$ ungerade ist, eine natürliche Zahl. Denn, wenn $k$ ungerade ist, dann ist $k-1$ gerade und damit "problemlos" durch $2$ teilbar.
+
+
+**k ist gerade**
+
+Wenn $k$ gerade ist, ist $k-1$ ungerade und damit nicht ohne Rest durch $2$ teilbar. Auch die Addition von $n$ ändert natürlich nichts daran: $n+ \frac{k-1}{2}$ ist dann keine natürliche Zahl. In diesem Fall ist die Summe also nicht durch $k$ teilbar. 
+
+(Aber durch $\frac{k}{2}$! Wir musst du hier argumentieren? Versuch's mal!)
+ 
+#### {-}
 
 ##### c) Zweite Abwandlung {-}
 Nun sollen es keine drei aufeinander folgenden Zahlen, sondern drei Zahlen mit gleichem Abstand sein. 
@@ -317,6 +378,22 @@ Nun sollen es keine drei aufeinander folgenden Zahlen, sondern drei Zahlen mit g
 
 `r hide("Lösung")`
 
+**Vermutung**
+
+Die Summe von drei natürlichen Zahlen mit Abstand $d$ ist durch $3$ teilbar.
+
+**Beweis**
+
+Drei aufeinander natürliche Zahlen mit Abstand $d$ sind: $n$, $n+d$ und $n+2d$.
+
+$$\begin{align} 
+& \; n+(n+d)+(n+2d) =\\
+= & \;n+n+d+n+2d \quad = \\
+= & \; 3n +3d = 3 \cdot (n+d)
+\end{align}$$
+
+Da der Term $3 \cdot (n+d)$ den Faktor 3 enthält, ist die Summe von drei natürlichen Zahlen mit Abstand $d$ durch 3 teilbar.
+
 #### {-}
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
@@ -328,7 +405,19 @@ Denke dir eine beliebige Zahl. Verdopple diese Zahl und addiere anschließend 7.
 
 a) Führe die Anweisungen für drei verschiedene Zahlen durch. Was fällt dir auf?
 
+`r hide("Lösung")`
+
+Das Ergebnis ist immer *4*.
+
+#### {-}
+
 b) Schreibe für deine anfangs gedachte Zahl die Variable x und stelle einen Term auf, der zu den Anweisungen passt.
+
+`r hide("Lösung")`
+
+$(3 \cdot (3 \cdot (2x+7)+3)-(x+4)):17 -x$
+
+#### {-}
 
 c) Vereinfache den Term aus b) so weit wie möglich und begründe die Entdeckung aus a).
 
@@ -336,6 +425,16 @@ c) Vereinfache den Term aus b) so weit wie möglich und begründe die Entdeckung
 
 
 `r hide("Lösung")`
+
+$$\begin{align}
+& \quad (3 \cdot (3 \cdot (2x+7)+3)-(x+4)):17 -x = \\
+& = ( 3 \cdot (6x+21+3)-(x+4)):17-x=\\
+& = (3 \cdot (6x+24) - x - 4):17 -x =\\
+& = (18x + 72 -x -4 ) : 17 -x = \\
+& = (17x + 68):17 -x= \\
+& = x + 4 - x =\\
+& = 4
+\end{align}$$
 
 #### {-}
 
@@ -350,11 +449,41 @@ Frau D. behauptet:
 
 a) Entscheide, ob Frau D. recht hat. Begründe deine Entscheidung.
 
+`r hide("Lösung")`
+
+Ja, Frau D. hat recht, denn $8n$ ist für jedes $n$ gerade, da $8$ durch $2$ teilbar ist. Demzufolge muss $8n+1$ für jedes $n$ ungerade sein.
+
+#### {-}
+
 b) Lässt sich mit Hilfe des Terms $8n+1$ jede ungerade Zahl darstellen? Begründe.
+
+`r hide("Lösung")`
+
+Nein, zum Beispiel die Zahl $3$ lässt sich mit dem Term $8n+1$ nicht darstellen. Auch nicht die Zahlen $5$, $7$ oder $13$. 
+
+#### {-}
 
 c) Gib drei weitere Terme an, mit denen man nur ungerade Zahlen darstellen kann, und drei, mit welchen man nur gerade Zahlen darstellen kann.
 
+`r hide("Lösung")`
+
+**Beispiele für Terme, mit denen man nur ungerade Zahlen darstellen kann**
+
+$2n+1$, $4n+1$, $6n+1$, $2n+3$, $2n-1$, $10n+5$
+
+**Beispiele für Terme, mit denen man nur gerade Zahlen darstellen kann**
+
+$2n$, $4n$, $6n$, $2n+2$, $10n+4$
+
+#### {-}
+
 d) Gibt es einen Term, mit dem man jede ungerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an.
+
+`r hide("Lösung")`
+
+Ja, mit dem Term $2n+1$ kann man jede ungerade Zahl darstellen, wenn für $n$ auch $0$ eingesetzt werden darf. Beginnend mit der $1$ ($1=0+1$) gibt es zu jeder ungerade Zahl eine gerade Zahl, die um $1$ kleiner ist.
+
+#### {-}
 
 e) Gibt es einen Term, mit dem man jede gerade Zahl darstellen kann. Begründe und gib diesen Term gegebenenfalls an.
 
@@ -362,6 +491,8 @@ e) Gibt es einen Term, mit dem man jede gerade Zahl darstellen kann. Begründe u
 
 
 `r hide("Lösung")`
+
+Ja, mit dem Term $2n$ kann man jede gerade Zahl darstellen. Setzt man für $n$ nach einander alle natürlichen Zahlen ein, so erhält man alle geraden Zahlen.
 
 #### {-}
 
@@ -378,6 +509,12 @@ Das Produkt von drei aufeinander folgenden Zahlen ist immer durch 6 teilbar.
 
 `r hide("Lösung")`
 
+Jede dritte Zahl ist durch $3$ teilbar. Also muss eine von drei aufeinander folgenden Zahlen durch $3$ teilbar sein. 
+
+Außerdem gilt, dass mindestens eine (vielleicht auch zwei) von drei Zahlen gerade sein muss. 
+
+Das Produkt von drei aufeinander folgenden Zahlen enthält also die Primfaktoren $3$ und $2$. Damit muss es durch $6$ teilbar sein.
+
 #### {-}
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
@@ -391,15 +528,78 @@ Frau D. kennt einen Rechentrick:
 
 a) Führe Frau D.'s Rechentrick mit den Zahlen 12 und 16 durch. Überprüfe, ob das Ergebnis dieser Rechnung wirklich das Produkt $12 \cdot 16$ ergibt.
 
+`r hide("Lösung")`
+
+$12+6=18$
+
+Null angehängt, ergibt die Zahl $180$
+
+$180+2 \cdot 6=180+12=192$
+
+**Probe**
+
+$12 \cdot 16 = 192$
+
+#### {-}
+
 b) Verwende für die erste Zahl den Term $10+x$ und für die zweite Zahl den Term $10+y$. Wie lautet dann ein Term für Frau D.'s Rechentrick?
 
+`r hide("Lösung")`
+
+Der Term für den Rechentrick lautet:
+
+$((10+x)+y) \cdot 10 + x \cdot y$
+
+#### {-}
+
 c) Überprüfe mit Hilfe dieses Terms, ob Frau D.'s Rechentrick immer funktioniert. Ergibt das Produkt der beiden Zahlen $10+x$ und $10+y$ immer diesen Term?
+
+`r hide("Lösung")`
+
+Wenn man den Term $((10+x)+y) \cdot 10 + x \cdot y$ ausmultipliziert, erhält man:
+
+$$\begin{align}
+((10+x)+y) \cdot 10 + x \cdot y &= (10 +x +y) \cdot 10 + x \cdot y =\\
+&= 100 +10x+10y+x\cdot y
+\end{align}$$
+
+Für das Produkt der beiden Zahlen $10+x$ und $10+y$ gilt gleichzeitig:
+
+$(10+x)\cdot (10+y) = 100 + 10y + 10x + x\cdot y$
+
+Der Rechentrick liefert also immer das korrekte Ergebnis.
+
+#### {-}
 
 d) Kannst du einen Rechentrick formulieren, der für das Produkt zweier Zahlen zwischen 20 und 30 gilt?
 
 <!-- Stark (rotes Heft) VERA 8 Mathematik S.148 Aufgabe 5 -->
 
 `r hide("Lösung")`
+
+Der Rechentrick könnte so formuliert sein:
+
+Wenn ich zwei natürliche Zahlen zwischen 20 und 30 miteinander multiplizieren soll, dann addiere ich zur ersten Zahl die Einerziffer der zweiten Zahl. An diese Summe hänge ich eine Null an, verdopple das Ergebnis und addiere dann noch das Produkt der beiden Einerziffern dazu.
+
+**Herleitung des Tricks**
+
+Für die beiden Zahlen zwischen $20$ und $30$ setzt man $20+x$ und $20+y$.
+
+Das Produkt der beiden Zahlen ist:
+
+$$\begin{align}
+(20+x) \cdot (20+y) &= 400 + 20x+20y+x \cdot y =\\
+& = 20 \cdot (20 +x+y) + x\cdot y = \\
+& = 2 \cdot 10 \cdot ((20+x)+y) + x \cdot y
+\end{align}$$
+
+Dabei sind dann:
+
+$20+x$ - die erste Zahl
+
+$y$ - die Einerziffer der zweiten Zahl
+
+$x\cdot y$ - das Produkt der beiden Einerziffern
 
 #### {-}
 
@@ -501,7 +701,31 @@ Experimentiere mit der folgenden Geogebra-Anwendung. Du kannst den Winkel $\phi$
 
 a) Formuliere einen mathematischen Satz, der den von dir vermuteten Sachverhalt beschreibt.
 
+`r hide("Lösung")`
+
+Wenn $A$, $P_1$ und $P_2$ auf einem Kreis um den Mittelpunkt $M$ liegen und $M$ im Inneren des Dreiecks $P_2P_1A$ liegt, dann gilt:
+
+$\measuredangle P_2MP_1 =  2 \cdot \measuredangle P_2AP_1$.
+
+#### {-}
+
 b) Prüfe, ob deine Vermutung auch dann gilt, wenn M auf einer Dreieckseite oder außerhalb des Dreiecks liegt. Präzisiere (gegebenenfalls) deinen Satz.
+
+`r hide("Lösung")`
+
+Wenn $A$, $P_1$ und $P_2$ auf einem Kreis um den Mittelpunkt $M$ liegen und $M$
+
++ auf der Sehne $P_1P_2$ liegt oder
+
++ im Inneren des Dreiecks $P_2P_1A$ liegt oder
+
++ auf der Strecke $\overline{AP_2}$ liegt oder ganz allgemein 
+
++ von $\overline{P_1P_2}$ aus gesehen auf der gleichen Seite wie $A$ liegt
+
+dann gilt: $\measuredangle AMB =  2 \cdot \measuredangle ACB$.
+
+#### {-}
 
 Im Folgenden geht es nun wieder darum, den aufgestellten Satz zu beweisen. Das darfst du gerne erst einmal ganz alleine und selbst versuchen. Solltest du an der ein oder anderen Stelle nicht weiterkommen, gibt es hier Tipps.
 
@@ -553,6 +777,19 @@ c) Schreibe den Beweis des Satzes übersichtlich auf. Wo greifst du in die Trick
 
 `r hide("Lösung")`
 
+
+**1. Fall: $A$, $P_1$ und $P_2$ liegen auf einem Kreis um den Mittelpunkt $M$ und $M$ liegt auf der Sehne $P_1P_2$.**
+
+
+**2. Fall: $A$, $P_1$ und $P_2$ liegen auf einem Kreis um den Mittelpunkt $M$ und $M$ liegt im Inneren des Dreiecks $P_2P_1A$**
+
+
+**3. Fall: $A$, $P_1$ und $P_2$ liegen auf einem Kreis um den Mittelpunkt $M$ und $M$ liegt auf der Strecke $\overline{AP_2}$**
+
+
+**4.Fall: $A$, $P_1$ und $P_2$ liegen auf einem Kreis um den Mittelpunkt $M$ und $M$ und $A$ liegen von $\overline{P_1P_2}$ aus gesehen auf der gleichen Seite**
+
+
 #### {-}
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
@@ -585,6 +822,18 @@ Bestimme die fehlenden Winkel.
 
 `r hide("Lösung")`
 
+Die Winkelsumme im Dreieck beträgt 180°. Das kann man hier zweimal nutzen:
+
+$\alpha =  180° - (55°+60°) = 180° - 115° = 65°$ und
+
+$\beta = 180° - (40° + 55° + 60°) = 180° - 155° = 25°$
+
+Genauso gut kann man natürlich zunächst den Nebenwinkel von $\alpha$ berechnen. Er hat die Weite: $180° - \alpha = 180° - 65° = 115°$
+
+Dann erhält man $\beta$ folgendermaßen:
+
+$\beta = 180° - (115° + 40°)= 180° - 155° = 25°$
+
 #### {-}
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
@@ -599,6 +848,16 @@ Begründe, dass die Winkel $\alpha$ und $\beta$ gleich groß sind.
 <!-- Cornelsen (grünes Heft) Lernstandserhebungen/VERA 8 Mathematik S.18 Aufgabe M11 WINKEL -->
 
 `r hide("Lösung")`
+
+Die Winkelsumme im Dreieck beträgt 180°. 
+
+Also gilt $\alpha + \gamma = 90°$ und $\beta + \delta = 90°$. 
+
+Außerdem sind $\gamma$ und $\delta$ Scheitelwinkel und damit gleich groß.
+
+Folglich gilt: $\alpha = 90° - \gamma \underbrace{=}_{\gamma = \delta} 90° - \delta = \beta$
+
+Somit ist also $\alpha = \beta$
 
 #### {-}
 
@@ -617,6 +876,8 @@ Gib die Größen aller Innenwinkel des Fünfecks an.
 
 `r hide("Lösung")`
 
+<img src="./images/fuenfeckbeschriftet.png" height="200" />
+
 #### {-}
 
 ```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
@@ -631,6 +892,28 @@ Bestimme die gekennzeichneten Winkel rechnerisch. Begründe ausführlich.
 <!-- Schulbuch S. 181 Aufgabe 12c -->
 
 `r hide("Lösung")`
+
+Die Winkelsumme im Dreieck beträgt 180°. Das kann man hier mehrfach nutzen:
+
+$$\begin{align}
+28° + 2 \cdot \alpha &= 180° \quad\quad |-28° \\
+2 \cdot \alpha &= 152° \quad\quad |:2 \\
+\alpha &= 76°
+\end{align}$$
+
+Analog gilt für $\beta$:
+
+$$\begin{align}
+76° + 2 \cdot \beta &= 180° \quad\quad |-76° \\
+2 \cdot \beta &= 104° \quad\quad |:2 \\
+\beta &= 52°
+\end{align}$$
+
+Damit kennt man auch den Nebenwinkel von $\beta$. Er hat die Weite: $180°-52°=128°$.
+
+Mit dem bekannten $28°$-Winkel, dem Nebenwinkel von $\beta$ und der Tatsache, dass die Winkelsumme im Dreieck 180° beträgt, lässt sich $\gamma$ folgendermaßen berechnen:
+
+$\gamma = 180° - (28° + 128°) = 180° - 156° = 24°$
 
 #### {-}
 

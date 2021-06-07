@@ -1,27 +1,27 @@
 {
-    "id": "F8CEE186",
+    "id": "3433E82B",
     "path": "~/github/Lernpfade/daw-8/argumentieren.Rmd",
     "project_path": "argumentieren.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "3720296219",
     "contents": "",
     "dirty": false,
-    "created": 1621177350560.0,
+    "created": 1623061375731.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 3,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "300,0",
-        "scrollLine": "300"
+        "cursorPosition": "839,280",
+        "scrollLine": "831"
     },
     "folds": "",
-    "lastKnownWriteTime": 1622619919,
+    "lastKnownWriteTime": 1623064639,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1622619919431,
+    "last_content_update": 1623064639772,
     "read_only": false,
     "read_only_alternatives": []
 }
